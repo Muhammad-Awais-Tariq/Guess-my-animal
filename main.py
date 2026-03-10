@@ -11,8 +11,8 @@ def get_response(content):
     return response.text
 
 animal = get_response("Randomely choose an animal from the animal kingdom and only give me the name of the animal no need to give description or anything just give me the name of that animal ")
-final_score = 20
-for i in range(20):
+final_score = 10
+for i in range(10):
     question = input(f"Enter your {i+1} question: ")
     final_score -= 1
     answer = get_response(f""" The user is trying to guess {animal} and is asking questions about it from you you can only give answer of 1 line do not go into detials
